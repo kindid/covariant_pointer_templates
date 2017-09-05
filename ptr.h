@@ -23,7 +23,7 @@ template<typename _inner>
         ptr(_inner * _data) : _data(_data)
         { }
 
-        template<typename _t> ptr(const ptr<_t> _that)
+        template<typename _t> ptr(const ptr<_t> & _that)
         {
             // note; rather annoyingly you can't put anything in
             // static_assert other than a string literal which
